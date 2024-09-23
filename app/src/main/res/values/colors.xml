@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryIndigo">#3f51b5</color>
+    <color name="textIcon">#FFFFFFFF</color>
+    <color name="accentTeal">#009688</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="darkPrimaryIndigo">#303F9F</color>
+    <color name="lightPrimaryIndigo">#C5CAE9</color>
+    <color name="dividerColor">#BDBDBD</color>
+</resources>

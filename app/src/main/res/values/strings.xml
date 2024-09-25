@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">GlobaltipsApp</string>
+    <string name="correo">Correo</string>
+    <string name="password">Contrasenia</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="name">Nombre</string>
+    <string name="correoRegistro">correo@email.com</string>
+    <string name="passwordRegistro">Password</string>
+    <string name="btnRegistro">Registrate</string>
+    <string name="btnVolver">Volver</string>
+    <string name="tab_text_1">Publicacion</string>
+    <string name="tab_text_2">Fotos</string>
+    
 </resources>

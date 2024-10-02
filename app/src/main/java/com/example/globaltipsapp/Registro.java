@@ -1,6 +1,8 @@
 package com.example.globaltipsapp;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,15 @@ public class Registro extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void loginRegister(View v){
+
+        EditText campo1 = this.findViewById(R.id.nombreRegistro);
+        String  nombreRegistro = campo1.getText().toString();
+        EditText campo2 = this.findViewById(R.id.correoRegistro);
+        String correoRegistro = campo2.getText().toString();
+        EditText campo3 = this.findViewById(R.id.passwordRegistro);
+        String passwordRegistro = campo3.getText().toString();
+        System.out.println(nombreRegistro+" "+correoRegistro+" "+passwordRegistro);
     }
 }

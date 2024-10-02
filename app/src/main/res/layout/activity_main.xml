@@ -11,6 +11,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,21 +40,28 @@
             android:hint="@string/password"
             android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/btnIngresar"
-            android:text="@string/btnIngresar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnRegister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="login"
-            android:text="@string/btnRegistrar"
-            android:visibility="visible"
-            app:toggleCheckedStateOnClick="false" />
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:onClick="login"
+                android:text="@string/btnRegistrar"
+                android:visibility="visible"
+                app:toggleCheckedStateOnClick="false" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/btnIngresar"
+                android:text="@string/btnIngresar" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

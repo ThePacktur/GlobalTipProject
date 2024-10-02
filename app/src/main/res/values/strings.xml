@@ -11,5 +11,7 @@
     <string name="btnVolver">Volver</string>
     <string name="tab_text_1">Publicacion</string>
     <string name="tab_text_2">Fotos</string>
+    <string name="tab_text_3">Amigos</string>
+
     
 </resources>

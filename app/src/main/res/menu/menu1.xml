@@ -5,11 +5,13 @@
     <item
         android:id="@+id/op1"
         android:icon="@drawable/ic_action_perfil"
+        android:orderInCategory="1"
         android:title="@string/perfil"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/op2"
         android:icon="@drawable/ic_action_config"
+        android:orderInCategory="2"
         android:title="@string/settings"
         app:showAsAction="ifRoom" />
     <item
@@ -27,6 +29,7 @@
     <item
         android:id="@+id/op7"
         android:icon="@drawable/ic_action_msj"
+        android:orderInCategory="3"
         android:title="@string/mensaje"
         app:showAsAction="always" />
 </menu>

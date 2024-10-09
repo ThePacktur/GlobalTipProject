@@ -3,12 +3,13 @@ package com.example.globaltipsapp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Registro extends AppCompatActivity {
 
@@ -17,20 +18,47 @@ public class Registro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registro);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+
     }
     public void loginRegister(View v){
 
-        EditText campo1 = this.findViewById(R.id.nombreRegistro);
-        String  nombreRegistro = campo1.getText().toString();
-        EditText campo2 = this.findViewById(R.id.correoRegistro);
-        String correoRegistro = campo2.getText().toString();
-        EditText campo3 = this.findViewById(R.id.passwordRegistro);
-        String passwordRegistro = campo3.getText().toString();
-        System.out.println(nombreRegistro+" "+correoRegistro+" "+passwordRegistro);
+        //recuperar views
+        EditText etNombre = (EditText) findViewById(R.id.etNombre);
+        EditText etCorreo = (EditText) findViewById(R.id.etCorreo);
+        EditText etPassword = (EditText) findViewById(R.id.etPassword);
+        EditText etPassword2 = (EditText) findViewById(R.id.etPassword2);
+        RadioGroup rdGenero = (RadioGroup) findViewById(R.id.rdGenero);
+        //recuperar el valor
+        String  usuario = etNombre.getText().toString();
+        String correo = etCorreo.getText().toString();
+        String password = etPassword.getText().toString();
+        String password2 = etPassword2.getText().toString();
+        if (password.equals(password2)){
+            Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this,"Registro fallido", Toast.LENGTH_SHORT).show();
+        }
+        int id = rdGenero.getCheckedRadioButtonId();
+        String genero = "";
+        switch (id){
+            case R.id.rdMasculino:
+                genero = "Masculino";
+                break;
+
+            case  R.id.rdFemenino:
+                genero = "Femenino";
+                break;
+
+            case  R.id.rdOtros:
+                genero = "Otros";
+                break;
+
+            default:
+                Toast.makeText(this,"Error al ingresar el genero", Toast.LENGTH_SHORT).show();
+        }
+        Spinner spPais = (Spinner) findViewById(R.id.spPais);
+        String paises = spPais.getSelectedItem().toString();
+
     }
 }

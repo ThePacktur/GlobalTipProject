@@ -6,12 +6,11 @@ import android.view.MenuItem;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class Principal extends AppCompatActivity {
 
@@ -20,8 +19,63 @@ public class Principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
-        Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar tb = (Toolbar) findViewById(R.id.tablayout);
         setSupportActionBar(tb);
+
+        TabLayout tl = (TabLayout) findViewById(R.id.tablayout);
+        tl.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                int position = tab.getPosition();
+
+                switch (position){
+                    case 0:
+                        //llamar a un fragmaneto:
+                        publicacion p = new publicacion();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,p).commit();
+
+                        break;
+
+                    case 1:
+
+                        fotos f = new fotos();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,f).commit();
+
+
+                        break;
+
+                    case 2:
+
+                        amigos ag = new amigos();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,ag).commit();
+
+                        break;
+
+
+
+
+                    case 3:
+
+                        travel tra = new travel();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,tra).commit();
+
+                        break;
+
+                }
+
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
     }
 
 
@@ -53,7 +107,7 @@ public class Principal extends AppCompatActivity {
             Toast.makeText(this,"Vas al calendario", Toast.LENGTH_SHORT).show();
 
         } else if (id==R.id.op7) {
-            Toast.makeText()
+            Toast.makeText(this,"vas a los mensajes", Toast.LENGTH_SHORT).show();
 
         }
 

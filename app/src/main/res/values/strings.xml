@@ -3,15 +3,22 @@
     <string name="correo">Correo</string>
     <string name="password">Contrasenia</string>
     <string name="btnIngresar">Ingresar</string>
-    <string name="btnRegistrar">Registrar</string>
+    <string name="btnRegistrar">Crear Cuenta</string>
     <string name="name">Nombre</string>
     <string name="correoRegistro">correo@email.com</string>
     <string name="passwordRegistro">Password</string>
+    <string name="passwordRepite">Vuelve a escribir la contrasenia</string>
     <string name="btnRegistro">Registrate</string>
     <string name="btnVolver">Volver</string>
-    <string name="tab_text_1">Publicacion</string>
-    <string name="tab_text_2">Fotos</string>
-    <string name="tab_text_3">Amigos</string>
+    <string name="TextArea">La Red Social para Amantes de los Viajes y el Turismo.</string>
+    <string name="logo_description">logoGlobal</string>
+    <string name="explore">Explore</string>
+    <string name="perfil">Perfil</string>
+    <string name="settings">Configuracion</string>
+    <string name="Reviews">Reviews</string>
+    <string name="mapa">Mapa</string>
+    <string name="calendario">Calendario</string>
+    <string name="mensaje">Mensaje</string>
 
-    
+
 </resources>

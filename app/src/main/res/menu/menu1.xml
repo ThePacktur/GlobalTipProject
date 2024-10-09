@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/op1"
+        android:icon="@drawable/ic_action_perfil"
+        android:title="@string/perfil"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/op2"
+        android:icon="@drawable/ic_action_config"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/op4"
+        android:title="@string/Reviews" />
+    <item
+        android:id="@+id/op3"
+        android:title="@string/explore" />
+    <item
+        android:id="@+id/op5"
+        android:title="@string/mapa" />
+    <item
+        android:id="@+id/op6"
+        android:title="@string/calendario" />
+    <item
+        android:id="@+id/op7"
+        android:icon="@drawable/ic_action_msj"
+        android:title="@string/mensaje"
+        app:showAsAction="always" />
+</menu>

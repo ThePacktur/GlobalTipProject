@@ -8,30 +8,36 @@
     tools:context=".Registro">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/logoGlobal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/logogt" />
+            app:srcCompat="@drawable/logoGlobal" />
 
         <TextView
             android:id="@+id/nombreRegistro"
-            android:layout_width="match_parent"
+            android:layout_width="224dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
             android:hint="@string/name" />
 
         <EditText
             android:id="@+id/correoRegistro"
-            android:layout_width="match_parent"
+            android:layout_width="224dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
@@ -40,11 +46,19 @@
 
         <EditText
             android:id="@+id/passwordRegistro"
-            android:layout_width="match_parent"
+            android:layout_width="229dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
             android:hint="@string/passwordRegistro"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/passwordRepite"
             android:inputType="textPassword" />
 
         <LinearLayout
@@ -65,5 +79,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/btnVolver" />
         </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

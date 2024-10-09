@@ -22,44 +22,87 @@
             android:id="@+id/logoGlobal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/logogt" />
+            android:contentDescription="@string/logo_description"
+            app:srcCompat="@drawable/logoGlobal" />
+
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:autofillHints="description"
+            android:gravity="center_horizontal"
+            android:hint="@string/TextArea"
+            android:inputType="textMultiLine"
+            android:minWidth="100dp"
+            android:minHeight="50dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/material_dynamic_tertiary20"
+            android:textColorHint="@color/primaryText" />
 
         <EditText
             android:id="@+id/emailRegister"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:minHeight="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:autofillHints="emailAddress"
             android:ems="10"
             android:hint="@string/correo"
             android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/passwordRegister"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:minHeight="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
             android:ems="10"
+            android:autofillHints="password"
             android:hint="@string/password"
+
             android:inputType="textPassword" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:onClick="loginFeed"
+            android:orientation="horizontal"
+            android:textAlignment="center">
 
             <Button
                 android:id="@+id/btnRegister"
                 android:layout_width="201dp"
                 android:layout_height="wrap_content"
-                android:onClick="login"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="loginRegister"
                 android:text="@string/btnRegistrar"
                 android:visibility="visible"
-                app:toggleCheckedStateOnClick="false" />
+                app:toggleCheckedStateOnClick="false"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="206dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/btnIngresar"
-                android:text="@string/btnIngresar" />
+                android:onClick="loginFeed"
+                android:text="@string/btnIngresar"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
     </LinearLayout>

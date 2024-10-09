@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
     }
 
-    public void loginRegister(View v){
+    public void loginFeed(View v){
 
         EditText camp1 = this.findViewById(R.id.emailRegister);
         String email = camp1.getText().toString();
@@ -25,12 +25,16 @@ public class MainActivity extends AppCompatActivity {
         String pass = camp2.getText().toString();
 
         if(email.equals("user1") && pass.equals("1234")){
-            Intent i = new Intent(this,FrontApp.class);
+            Intent i = new Intent(this,Principal.class);
             startActivity(i);
         }else{
             Toast.makeText(this,"Error en al iniciar secion", Toast.LENGTH_SHORT).show();
         }
 
 
+    }
+    public void  loginRegister(View v){
+        Intent iRestir = new Intent(this,Registro.class);
+        startActivity(iRestir);
     }
 }

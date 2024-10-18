@@ -30,11 +30,6 @@
 
             app:tabMode="scrollable">
 
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/public1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/publicacion" />
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/photo2"
@@ -48,11 +43,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/fiends" />
 
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/travel4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/travelReserve" />
         </com.google.android.material.tabs.TabLayout>
 
 

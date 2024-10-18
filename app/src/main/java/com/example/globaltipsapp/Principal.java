@@ -28,14 +28,8 @@ public class Principal extends AppCompatActivity {
                 int position = tab.getPosition();
 
                 switch (position){
+
                     case 0:
-                        //llamar a un fragmaneto:
-                        publicacion p = new publicacion();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.publick,p).commit();
-
-                        break;
-
-                    case 1:
 
                         photos f = new photos();
                         getSupportFragmentManager().beginTransaction().replace(R.id.photosRecyclerView,f).commit();
@@ -43,22 +37,13 @@ public class Principal extends AppCompatActivity {
 
                         break;
 
-                    case 2:
+                    case 1:
 
                         amigos ag = new amigos();
                         getSupportFragmentManager().beginTransaction().replace(R.id.friends,ag).commit();
 
                         break;
 
-
-
-
-                    case 3:
-
-                        travel tra = new travel();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.travel,tra).commit();
-
-                        break;
 
                 }
 

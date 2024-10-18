@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/logoGlobal"
+            android:id="@+id/logoglobal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/logo_description"

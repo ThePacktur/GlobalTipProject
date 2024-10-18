@@ -44,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(iRestir);
     }
 
-    public static class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.PhotoViewHolder> {
+    public static class photos extends RecyclerView.Adapter<photos.PhotoViewHolder> {
 
         private Context context;
         private int[] imageIds;
 
         // Constructor que recibe el contexto y el array de imágenes
-        public PhotoAdapter(Context context, int[] imageIds) {
+        public photos(Context context, int[] imageIds) {
             this.context = context;
             this.imageIds = imageIds;
         }

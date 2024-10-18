@@ -98,4 +98,12 @@ public class Principal extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void setSupportActionBar(Toolbar supportActionBar) {
+        this.supportActionBar = supportActionBar;
+    }
+
+    public Toolbar getSupportActionBar() {
+        return supportActionBar;
+    }
 }

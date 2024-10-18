@@ -104,6 +104,7 @@ public class Principal extends AppCompatActivity {
     }
 
     public Toolbar getSupportActionBar() {
+
         return supportActionBar;
     }
 }

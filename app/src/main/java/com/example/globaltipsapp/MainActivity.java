@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(this,Principal.class);
             startActivity(i);
         }else{
-            Toast.makeText(this,"Error en al iniciar secion", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Error en al logearse", Toast.LENGTH_SHORT).show();
         }
 
 

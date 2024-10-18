@@ -1,15 +1,9 @@
 package com.example.globaltipsapp;
 
 import android.view.View;
-import android.view.ViewGroup;
 
-
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
-
-
-
 
 public class photos extends Fragment {
 
@@ -22,9 +16,9 @@ public class photos extends Fragment {
             R.drawable._360352
     };
 
-
     @Nullable
-    public <LayoutInflater> View onCreateView(LayoutInflater inflater, ViewGroup container) {
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fotos, container, false);
 
         // Configurar el RecyclerView con un GridLayoutManager (3 columnas)
@@ -32,8 +26,8 @@ public class photos extends Fragment {
         photosRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
 
         // Configurar el adaptador y asignarlo al RecyclerView
-        new MainActivity.PhotoAdapter(getContext(), imageIds);
-        photosRecyclerView.setAdapter(photosRecyclerView.getAdapter());
+        MainActivity.PhotoAdapter photoAdapter = new MainActivity.PhotoAdapter(getContext(), imageIds);
+        photosRecyclerView.setAdapter(photoAdapter);
 
         return view;
     }

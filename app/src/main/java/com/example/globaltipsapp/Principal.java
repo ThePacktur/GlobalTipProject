@@ -8,7 +8,6 @@ import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -19,10 +18,10 @@ public class Principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
-        Toolbar tb = (Toolbar) findViewById(R.id.tablayout);
+        Toolbar tb = (Toolbar) findViewById(R.id.atabletout);
         setSupportActionBar(tb);
 
-        TabLayout tl = (TabLayout) findViewById(R.id.tablayout);
+        TabLayout tl = (TabLayout) findViewById(R.id.tabletout);
         tl.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -32,14 +31,14 @@ public class Principal extends AppCompatActivity {
                     case 0:
                         //llamar a un fragmaneto:
                         publicacion p = new publicacion();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,p).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.publick,p).commit();
 
                         break;
 
                     case 1:
 
-                        fotos f = new fotos();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,f).commit();
+                        photos f = new photos();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.photosRecyclerView,f).commit();
 
 
                         break;
@@ -47,7 +46,7 @@ public class Principal extends AppCompatActivity {
                     case 2:
 
                         amigos ag = new amigos();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,ag).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.friends,ag).commit();
 
                         break;
 
@@ -57,7 +56,7 @@ public class Principal extends AppCompatActivity {
                     case 3:
 
                         travel tra = new travel();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,tra).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.travel,tra).commit();
 
                         break;
 

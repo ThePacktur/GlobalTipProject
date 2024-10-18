@@ -16,13 +16,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/atabletout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#506A7E"
             app:layout_scrollFlags="scroll|enterAlways"></androidx.appcompat.widget.Toolbar>
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tablayout"
+            android:id="@+id/tabletout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_scrollFlags="scroll|enterAlways"
@@ -53,42 +54,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/travelReserve" />
         </com.google.android.material.tabs.TabLayout>
-
-        <FrameLayout
-            android:id="@+id/contenedor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </FrameLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="204dp">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="66dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/_07171e258b8e7a4f875d19aa8ca31ea" />
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="390dp"
-                    android:layout_height="82dp"
-                    android:hint="@string/Contenido" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <androidx.constraintlayout.widget.Barrier
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:barrierDirection="top"
-                app:constraint_referenced_ids="textInputLayout" />
-
-        </FrameLayout>
 
 
     </com.google.android.material.appbar.AppBarLayout>

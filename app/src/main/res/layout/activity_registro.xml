@@ -49,7 +49,7 @@
             android:layout_width="365dp"
             android:layout_height="wrap_content"
             android:hint="@string/genero"
-            android:text="TextView" />
+            android:text="Genero" />
 
         <RadioGroup
             android:id="@+id/rdGenero"

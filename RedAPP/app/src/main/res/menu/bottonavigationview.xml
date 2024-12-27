@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_feed"
+        android:icon="@drawable/baseline_feedback_24"
+        android:title="@string/nav_feed" />
+
+    <item
+        android:id="@+id/nav_post"
+        android:icon="@drawable/baseline_compost_24"
+        android:title="@string/nav_post" />
+
+    <item
+        android:id="@+id/nav_friends"
+        android:icon="@drawable/baseline_mobile_friendly_24"
+        android:title="@string/nav_friends" />
+
+    <item
+        android:id="@+id/nav_messages"
+        android:icon="@drawable/baseline_comment_24"
+        android:title="@string/nav_messages" />
+</menu>
